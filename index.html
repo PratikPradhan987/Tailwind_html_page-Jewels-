@@ -5,105 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrat</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div>
       <!-- NavBar -->
       <nav class="border-gray-200 bg-white dark:bg-gray-900">
-        <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+        <div
+          class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+        >
           <a href="https://flowbite.com/" class="flex items-center">
-            <img src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png" class="mr-3 h-8" alt="Flowbite Logo" />
-            <span>
-              <div class="relative hidden md:block">
-                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                  <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                  </svg>
-                  <span class="sr-only">Search icon</span>
-                </div>
-                <input type="text" id="search-navbar" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" placeholder="Search..." />
-              </div>
-            </span>
+            <img
+              src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png"
+              class="mr-3 h-8"
+              alt="Flowbite Logo"
+            />
           </a>
-<!-- Side bar -->
+          <span>
+            <div class="relative hidden md:block">
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+              >
+                <svg
+                  class="h-4 w-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+          </span>
 
+          <!-- Side bar -->
 
-          <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 sm:hidden">
+          <button
+            data-drawer-target="default-sidebar"
+            data-drawer-toggle="default-sidebar"
+            aria-controls="default-sidebar"
+            type="button"
+            class="ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 sm:hidden"
+          >
             <span class="sr-only">Open sidebar</span>
-            <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+            <svg
+              class="h-6 w-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+              ></path>
             </svg>
           </button>
-    
-          <aside id="default-sidebar" class="md:hidden fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0" aria-label="Sidebar">
-            <div class="h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800">
+
+          <aside
+            id="default-sidebar"
+            class="md:hidden fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0"
+            aria-label="Sidebar"
+          >
+            <div
+              class="h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800"
+            >
               <ul class="space-y-2 font-medium">
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                    
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3">All jewellery</span>
                   </a>
                 </li>
                 <li>
-                    <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                          
-                          <span class="flex-1 ml-3 text-left whitespace-nowrap">Home</span>
-                          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                          </svg>
-                    </button>
-                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                          <li>
-                             <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Category</a>
-                          </li>
-                          <li>
-                             <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Gender</a>
-                          </li>
-                          <li>
-                             <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Price Band</a>
-                          </li>
-                    </ul>
-                 </li>
+                  <button
+                    type="button"
+                    class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    aria-controls="dropdown-example"
+                    data-collapse-toggle="dropdown-example"
+                  >
+                    <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                      >Home</span
+                    >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >Category</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >Gender</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >Price Band</a
+                      >
+                    </li>
+                  </ul>
+                </li>
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                    
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3 flex-1 whitespace-nowrap">Gold</span>
-                    <span class="ml-3 inline-flex items-center justify-center rounded-full bg-gray-100 px-2 text-sm font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300">Pro</span>
+                    <span
+                      class="ml-3 inline-flex items-center justify-center rounded-full bg-gray-100 px-2 text-sm font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-300"
+                      >Pro</span
+                    >
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                    
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3 flex-1 whitespace-nowrap">Diamond</span>
-                    <span class="ml-3 inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-100 p-3 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">3</span>
+                    <span
+                      class="ml-3 inline-flex h-3 w-3 items-center justify-center rounded-full bg-blue-100 p-3 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300"
+                      >3</span
+                    >
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                    
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3 flex-1 whitespace-nowrap">Earrings</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                   
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3 flex-1 whitespace-nowrap">Products</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                    
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3 flex-1 whitespace-nowrap">Sign In</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
-                    
+                  <a
+                    href="#"
+                    class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
                     <span class="ml-3 flex-1 whitespace-nowrap">Sign Up</span>
                   </a>
                 </li>
@@ -113,71 +213,508 @@
 
           <!-- dsa -->
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
+            <ul
+              class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900"
+            >
               <li>
-                <a href="#" class="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500" aria-current="page">DIAMONDS</a>
+                <a
+                  href="#"
+                  class="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500"
+                  aria-current="page"
+                  >DIAMONDS</a
+                >
               </li>
               <li>
-                <a href="#" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">STORE</a>
+                <a
+                  href="#"
+                  class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >STORE</a
+                >
               </li>
               <li>
-                <a href="#" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">ACCOUNT</a>
+                <a
+                  href="#"
+                  class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >ACCOUNT</a
+                >
               </li>
               <li>
-                <a href="#" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">WHISHLIST</a>
+                <a
+                  href="#"
+                  class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >WHISHLIST</a
+                >
               </li>
               <li>
-                <a href="#" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">CART</a>
+                <a
+                  href="#"
+                  class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                  >CART</a
+                >
               </li>
             </ul>
           </div>
         </div>
         <span class="md:hidden">
           <form>
-            <label for="default-search" class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white">Search</label>
+            <label
+              for="default-search"
+              class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Search</label
+            >
             <div class="relative">
-              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+              >
+                <svg
+                  class="h-4 w-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
                 </svg>
               </div>
-              <input type="search" id="default-search" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500" placeholder="Search Mockups, Logos..." required />
-              <button type="submit" class="absolute bottom-2.5 right-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                placeholder="Search Mockups, Logos..."
+                required
+              />
+              <button
+                type="submit"
+                class="absolute bottom-2.5 right-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Search
+              </button>
             </div>
           </form>
         </span>
       </nav>
 
       <!-- Navbar done -->
+      <!-- drop down category -->
+
+      <div
+        class="m-2 p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+      >
+        <span class="flex justify-between" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center mb-3 sm:mb-0">
+            <!-- RINGS -->
+            <li>
+              <div class="flex items-center">
+                <button
+                  id="dropdownProject"
+                  data-dropdown-toggle="dropdown-project"
+                  class="inline-flex items-center px-3 py-2 text-sm font-normal text-center text-white"
+                >
+                  <span class=""></span>RINGS<svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="dropdown-project"
+                  class="grid grid-cols-3 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700"
+                >
+                  <div class="p-4 pb-0 text-gray-900 dark:text-white md:pb-4">
+                    <ul
+                      class="space-y-4"
+                      aria-labelledby="mega-menu-dropdown-button"
+                    >
+                      <li>POPULAR RINGS TYPE</li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Daily Wear
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Engagement
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Solitaire
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Cocktail
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Men's
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Office Wear
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-4 pb-0 text-gray-900 dark:text-white md:pb-4">
+                    <ul class="space-y-4">
+                      <li>BY PRICE RANGE</li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Below 10K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          10K - 20K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          20K - 30K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          30K - 50K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Above 50K
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-4">
+                    <ul class="space-y-4">
+                      <li>BY METAL & STONES</li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Diamond
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Gold
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Gemstone
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Silver
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <span class="mx-2 text-gray-400">/</span>
+            <!-- EARRINGS -->
+            <!-- "dropdown-database"
+            id="dropdownDatabase"
+            data-dropdown-toggle="dropdown-database" -->
+
+            <li>
+              <div class="flex items-center">
+                <button
+                  id="dropdownDatabase"
+                  data-dropdown-toggle="dropdown-database"
+                  class="inline-flex items-center px-3 py-2 text-sm font-normal text-center text-white"
+                >
+                  <span class=""></span>EARRINGS<svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="dropdown-database"
+                  class="grid grid-cols-3 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700"
+                >
+                  <div class="p-4 pb-0 text-gray-900 dark:text-white md:pb-4">
+                    <ul
+                      class="space-y-4"
+                      aria-labelledby="mega-menu-dropdown-button"
+                    >
+                      <li>POPULAR EARRING TYPE</li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Stud
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Drop
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Hoops
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Jhumkas
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Sui Dhaga
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Ear Cuffs
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-4 pb-0 text-gray-900 dark:text-white md:pb-4">
+                    <ul class="space-y-4">
+                      <li>BY PRICE RANGE</li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Below 10K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          10K - 20K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          20K - 30K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          30K - 50K
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Above 50K
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="p-4">
+                    <ul class="space-y-4">
+                      <li>BY METAL & STONES</li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Diamond
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Gold
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Gemstone
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500"
+                        >
+                          Silver
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </span>
+      </div>
 
       <!-- image show  -->
       <section class="body-font text-gray-600">
         <div class="container mx-auto flex flex-wrap px-5 py-24">
           <div class="mb-20 flex w-full flex-wrap">
-            <h1 class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl lg:mb-0 lg:w-1/3">Master Cleanse Reliac Heirloom</h1>
-            <p class="mx-auto text-base leading-relaxed lg:w-2/3 lg:pl-6">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+            <h1
+              class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl lg:mb-0 lg:w-1/3"
+            >
+              Master Cleanse Reliac Heirloom
+            </h1>
+            <p class="mx-auto text-base leading-relaxed lg:w-2/3 lg:pl-6">
+              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+              gentrify, subway tile poke farm-to-table. Franzen you probably
+              haven't heard of them man bun deep jianbing selfies heirloom.
+            </p>
           </div>
           <div class="-m-1 flex flex-wrap md:-m-2">
             <div class="flex w-1/2 flex-wrap">
               <div class="w-1/2 p-1 md:p-2">
-                <img alt="gallery" class="block h-full w-full object-cover object-center" src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" />
+                <img
+                  alt="gallery"
+                  class="block h-full w-full object-cover object-center"
+                  src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                />
               </div>
               <div class="w-1/2 p-1 md:p-2">
-                <img alt="gallery" class="block h-full w-full object-cover object-center" src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" />
+                <img
+                  alt="gallery"
+                  class="block h-full w-full object-cover object-center"
+                  src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                />
               </div>
               <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block h-full w-full object-cover object-center" src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Dhanteras/2x.webp" />
+                <img
+                  alt="gallery"
+                  class="block h-full w-full object-cover object-center"
+                  src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Dhanteras/2x.webp"
+                />
               </div>
             </div>
             <div class="flex w-1/2 flex-wrap">
               <div class="w-full p-1 md:p-2">
-                <img alt="gallery" class="block h-full w-full object-cover object-center" src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/10_OCT/HPBanner/NewArrival/1X.jpg" />
+                <img
+                  alt="gallery"
+                  class="block h-full w-full object-cover object-center"
+                  src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/10_OCT/HPBanner/NewArrival/1X.jpg"
+                />
               </div>
               <div class="w-1/2 p-1 md:p-2">
-                <img alt="gallery" class="block h-full w-full object-cover object-center" src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" />
+                <img
+                  alt="gallery"
+                  class="block h-full w-full object-cover object-center"
+                  src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                />
               </div>
               <div class="w-1/2 p-1 md:p-2">
-                <img alt="gallery" class="block h-full w-full object-cover object-center" src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" />
+                <img
+                  alt="gallery"
+                  class="block h-full w-full object-cover object-center"
+                  src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                />
               </div>
             </div>
           </div>
@@ -186,80 +723,208 @@
       <!-- image show done -->
 
       <!-- Slider main container -->
-<div class="p-7">
-      <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+      <div class="p-7">
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
           </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+          <!-- Slider indicators -->
+          <div
+            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3"
+          >
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
           </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
-          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
+            >
+              <svg
+                class="h-4 w-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
+            >
+              <svg
+                class="h-4 w-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
         </div>
-        <!-- Slider indicators -->
-        <div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3">
-          <button type="button" class="h-3 w-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+
+        <!-- Slider main container end -->
+
+        <!-- jewellery slide -->
+        <div class="mt-2 sm:block hidden">
+          <swiper-container class="mySwiper" init="false">
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp"
+                alt=""
+            /></swiper-slide>
+          </swiper-container>
         </div>
-        <!-- Slider controls -->
-        <button type="button" class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none" data-carousel-prev>
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-            <svg class="h-4 w-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button" class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none" data-carousel-next>
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-            <svg class="h-4 w-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
       </div>
 
-      <!-- Slider main container end -->
-      
-      <!-- jewellery slide -->
-      <div class="mt-2 sm:block hidden">
-      <swiper-container class="mySwiper" init="false">
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-        <swiper-slide><img src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/11_NOV/AppBanner/Weddinggifts/01/2X.webp" alt=""></swiper-slide>
-      </swiper-container>
-    </div>
-</div>
-    
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    
+
       <script>
-        const swiperEl = document.querySelector('swiper-container')
+        const swiperEl = document.querySelector("swiper-container");
         Object.assign(swiperEl, {
           slidesPerView: 1,
           spaceBetween: 10,
@@ -285,7 +950,6 @@
       </script>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
   </body>
